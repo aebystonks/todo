@@ -9,36 +9,54 @@
 <body>
 
 	<div class="wrapper">
-		<h2>To-Do List</h2>
 
-		<div class="container">
+		<div class="high-content">
 
-			<form class="input-form">
-				<div class="input-container">
-					<input type="text" class="custom-input" placeholder="Enter a new task">
-					<button class="icon-button" type="submit">
-						<img src="./img/add.png" alt="Add Task" class="icon">
-					</button>
+			<div class="container">
+
+				<h2>High priority task 🎯</h2>
+
+				<form class="high-priority-form">
+					<div class="input-container">
+						<input type="text" class="high-custom-input input" placeholder="Enter a new task">
+						<button class="icon-button" type="submit">
+							<img src="./img/add.png" alt="Add Task" class="icon">
+						</button>
+					</div>
+				</form>
+
+				<div class="high-outer-container outer-container">
+
 				</div>
-			</form>
-
-			<div class="outer-content-container">
-
-				<div class="content-container">
-					<label class="checkbox-label">
-						<input class="checkbox" type="checkbox">
-						<div class="checkbox-custom"></div>
-					</label>
-					<div class="content-text">Предводительная задача</div>
-					<img src="./img/delete.png" alt="Delete" class="delete-icon">
-				</div>
-
 			</div>
+
+		</div>
+
+		<div class="low-content">
+
+			<div class="container">
+
+				<h2>Low priority task 💤</h2>
+
+				<form class="low-priority-form">
+					<div class="input-container">
+						<input type="text" class="low-custom-input input" placeholder="Enter a new task">
+						<button class="icon-button" type="submit">
+							<img src="./img/add.png" alt="Add Task" class="icon">
+						</button>
+					</div>
+				</form>
+
+				<div class="low-outer-container outer-container">
+
+				</div>
+			</div>
+
 		</div>
 
 	</div>
 
-	<script src="your-script.js"></script>
+	<script type='module' src="main.js"></script>
 </body>
 
 </html>

@@ -15,6 +15,19 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+body::-webkit-scrollbar {
+	width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #6e6d6d00;
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}
+
 h2 {
 	text-align: center;
 	font-size: 48px;
@@ -25,6 +38,7 @@ h2 {
 	max-width: 800px;
 	margin: 0 auto;
 	margin-top: 70px;
+	margin-bottom: 70px;
 }
 
 .container {
@@ -33,7 +47,7 @@ h2 {
 	align-items: center;
 }
 
-.input-form {
+form {
 	width: 100%;
 	max-width: 740px;
 	margin-bottom: 20px;
@@ -47,7 +61,7 @@ h2 {
 	border-radius: 4px;
 }
 
-.custom-input {
+.input {
 	flex: 1;
 	border: none;
 	outline: none;
@@ -72,7 +86,6 @@ h2 {
 
 .content-container {
 	display: flex;
-	/*align-items: flex-start;*/
 	border: 1.5px solid #ffffff;
 	padding: 20px;
 	width: 750px;
@@ -108,7 +121,7 @@ h2 {
 	flex: 1;
 	max-width: calc(100% - 50px);
 	word-wrap: break-word;
-	max-width: 610px;
+	max-width: 606px;
 	font-size: 24px;
 	transition: all 500ms;
 	margin-top: 4px;
@@ -130,34 +143,6 @@ h2 {
 	margin-left: 17px;
 }
 
-.outer-content-container {
-	margin-top: 24px;
-	max-height: 300px;
-	overflow-y: auto;
-	border-radius: 4px;
-}
-
-/* Стили для скроллбара */
-.outer-content-container::-webkit-scrollbar {
-	width: 8px; /* Ширина скроллбара */
-}
-
-/* Стили для трека скроллбара (полосы) */
-.outer-content-container::-webkit-scrollbar-track {
-	background-color: #393838; /* Цвет трека скроллбара */
-}
-
-/* Стили для дорожки скроллбара (заполненной полосы) */
-.outer-content-container::-webkit-scrollbar-thumb {
-	background-color: #6e6d6d; /* Цвет дорожки скроллбара */
-	border-radius: 8px; /* Скругление углов дорожки */
-}
-
-/* Стили для дорожки скроллбара при наведении */
-.outer-content-container::-webkit-scrollbar-thumb:hover {
-	background-color: #555; /* Цвет дорожки скроллбара при наведении */
-}
-
 .checkbox-custom_done {
 	width: 20px;
 	height: 20px;
@@ -168,4 +153,45 @@ h2 {
 	transition: all 150ms;
 	margin-top: 5px;
 	text-decoration: line-through;
+}
+
+.outer-content-container {
+	overflow-y: auto;
+}
+
+/* Стили для скроллбара */
+.outer-container-added::-webkit-scrollbar {
+	width: 8px; /* Ширина скроллбара */
+}
+
+/* Стили для трека скроллбара (полосы) */
+.outer-container-added::-webkit-scrollbar-track {
+	background-color: #393838; /* Цвет трека скроллбара */
+}
+
+/* Стили для дорожки скроллбара (заполненной полосы) */
+.outer-container-added::-webkit-scrollbar-thumb {
+	background-color: #6e6d6d; /* Цвет дорожки скроллбара */
+	border-radius: 8px; /* Скругление углов дорожки */
+}
+
+/* Стили для дорожки скроллбара при наведении */
+.outer-container-added::-webkit-scrollbar-thumb:hover {
+	background-color: #555; /* Цвет дорожки скроллбара при наведении */
+}
+
+.checked-text-content {
+	text-decoration: line-through;
+	color: #ababab;
+}
+
+.outer-container-added {
+	max-height: 300px;
+	overflow-y: auto;
+	padding: 24px;
+	border-radius: 8px;
+}
+
+.high-content {
+	margin-bottom: 48px;
 }
